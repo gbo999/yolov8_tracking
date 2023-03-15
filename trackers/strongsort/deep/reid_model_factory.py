@@ -172,7 +172,7 @@ def load_pretrained_weights(model, weight_path):
         >>> weight_path = 'log/my_model/model-best.pth.tar'
         >>> load_pretrained_weights(model, weight_path)
     """
-    checkpoint = torch.load(weight_path)
+    checkpoint = torch.load(weight_path,map_location=torch.device('cpu'))
     if 'state_dict' in checkpoint:
         state_dict = checkpoint['state_dict']
     else:

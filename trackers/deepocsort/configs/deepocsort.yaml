@@ -7,6 +7,6 @@ deepocsort:
   det_thresh: 0
   inertia: 0.3941737016672115
   iou_thresh: 0.22136877277096445
-  max_age: 50
+  max_age: 700
   min_hits: 1
   use_byte: false
